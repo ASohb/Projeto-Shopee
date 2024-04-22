@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+img.logo {
+    width: 8%;
+    height: 8%;
+}
+header{
+    padding: 2px 0;
+    background: linear-gradient(#1b191c 15%, #e2e0e0 100%);
+    color: rgb(53, 54, 55);
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    
+}
+footer{
+    background: linear-gradient(#bfbebe 15%, #2b2b2c 100%);
+    color:  rgb(90, 92, 92);
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.produtos  {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.produtos  button {
+    width: 100%;
+    height: 200px; /* Altura fixa para os botões */
+    position: relative;
+    overflow: hidden;
+    padding: 0; /* Remover o preenchimento interno do botão */
+    border: none; /* Remover borda do botão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.produtos  img {
+    width: 100%;
+    max-height: 80%; /* Definindo altura máxima para a imagem */
+    object-fit: contain; /* Redimensionar a imagem para caber no contêiner */
+    transition: transform 0.3s ease;
+}
+.produtos  .title {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: bottom 0.3s ease;
+}
+.produtos  button:hover img {
+    transform: scale(1.1);
+}
+.produtos  button:hover .title {
+    bottom: -50px;
+}
+.produtos  button:hover {
+    opacity: 0.7;
+}
+
+
